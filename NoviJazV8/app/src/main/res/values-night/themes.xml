@@ -1,0 +1,16 @@
+<resources>
+    <style name="Base.Theme.NoviJazV1" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/blue_compat</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/white</item>
+        <item name="checkboxStyle">@style/Widget.App.CheckBox</item>
+        <item name="colorSubtleText">@color/subtleTextDark</item>
+    </style>
+
+    <style name="Widget.App.CheckBox" parent="Widget.MaterialComponents.CompoundButton.CheckBox">
+        <item name="buttonTint">?attr/colorSecondary</item>
+    </style>
+
+    <!-- Glavna tema -->
+    <style name="Theme.NoviJazV1" parent="Base.Theme.NoviJazV1" />
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:textSize="22sp"
+        android:background="@drawable/toolbar_border"
+        app:navigationIcon="?attr/homeAsUpIndicator"/>
+
+    <!-- Datum -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/editTextTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. 5. 2025 8:30"
+        android:background="@drawable/toolbar_border"
+        android:textSize="20sp"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- Beležka -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beležka"
+        android:textSize="20sp"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNote"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:minHeight="56dp"
+        android:hint="Vnesi opombe"
+        android:textSize="20sp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:imeOptions="actionDone"/>
+
+    <!-- Checkboxi -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shranjevanje"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxSuccess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uspelo mi je"
+        android:textSize="20sp"
+        android:textColor="@color/blue_compat"
+        android:drawableStart="@drawable/baseline_local_fire_department_24_blue"
+        android:drawablePadding="8dp"/>
+
+    <CheckBox
+        android:id="@+id/checkboxFailure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Padel sem"
+        android:textSize="20sp"
+        android:textColor="@color/red_compat"
+        android:drawableStart="@drawable/baseline_local_fire_department_24_red"
+        android:drawablePadding="8dp"/>
+
+    <!-- Gumb za shranjevanje -->
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shrani vnos"
+        android:textSize="20sp"
+        android:layout_marginTop="24dp"/>
+
+</LinearLayout>

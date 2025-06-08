@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Ogenj nad naslovom -->
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/baseline_local_fire_department_24_blue"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Naslov -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NOVI JAZ"
+        android:textSize="45sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OSVOBODI SE ODVISNOSTI, \nEN DAN NAENKRAT"
+        android:textSize="25sp"
+        android:gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Motivacijski tekst -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Spremljaj svoj napredek,\nohrani motivacijo in\npraznuj vsak dosežen dan."
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginBottom="30dp"/>
+
+    <!-- Horizontalna črta -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?attr/colorSecondary"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Ime slabe navade -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slaba navada"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:minHeight="56dp"
+        android:hint=" npr. Brez cigaret"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/grey"
+        android:background="@drawable/date_selector_bg"
+        android:inputType="text"
+        android:layout_marginBottom="16dp"
+        android:imeOptions="actionDone"/>
+
+    <!-- Datum -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Začetni datum"
+        android:textSize="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5. 5. 2025 8:30"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:background="@drawable/date_selector_bg"
+        android:padding="12dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Gumb za začetek -->
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Začni svojo pot"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Spodnji popup -->
+    <TextView
+        android:id="@+id/infoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kaj je Novi Jaz?"
+        android:textSize="20sp"
+        android:textColor="?attr/colorPrimary"
+        android:layout_marginTop="18sp"/>
+
+</LinearLayout>
